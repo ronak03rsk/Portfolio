@@ -8,3 +8,12 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
+/* Hide scrollbar in modern browsers */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  

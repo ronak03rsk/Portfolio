@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillCard = ({ title, img }) => {
   return (
-    <div className='m-4'>
+    <div className='m-4 text-center'>
       <img src={img} alt={title} className='w-20 h-20' />
       <p>{title}</p>
     </div>

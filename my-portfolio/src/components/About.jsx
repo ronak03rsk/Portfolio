@@ -3,7 +3,7 @@ import profile from '../Assets/profile.png';
 
 const About = () => {
   return (
-    <section id='about'className='min-h-screen p-2 my-12 mx-2 flex items-center justify-center lg:my-20'>
+    <section id='about'className='min-h-screen p-2 mx-2 flex items-center justify-center'>
       <div className=' flex-shrink-0 justify-center'>
         <img src={profile} alt="Profile" className="rounded-full h-32 w-32 md:h-64 md:w-64" />
       </div>
