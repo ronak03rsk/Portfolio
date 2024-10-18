@@ -12,9 +12,9 @@ const Connect = () => {
   ];
 
   return (
-    <section id="connect">
-      <h2 className='text-base md:text-lg lg:text-xl font-bold my-8 p-8'>Connect</h2>
-      <div className='flex justify-center gap-4 items-center m-4'>
+    <section id="connect" className="min-h-screen flex flex-col justify-center items-center">
+      <h2 className='text-base md:text-lg lg:text-xl font-bold mb-8 p-8 text-center'>Connect</h2>
+      <div className='flex flex-wrap justify-center gap-8 items-center'>
         {connections.map((connection) => (
           <ConnectLink key={connection.name} name={connection.name} image={connection.image} link={connection.link} />
         ))}

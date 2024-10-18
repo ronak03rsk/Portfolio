@@ -25,20 +25,20 @@ const Projects = () => {
   };
 
   return (
-    <section id='projects' className='min-h-screen relative'>
-      <h2 className='justify-center text-base md:text-lg lg:text-3xl font-bold mb-8'>Projects</h2>
+    <section id='projects' className='min-h-screen flex flex-col justify-center items-center'>
+      <h2 className='text-base md:text-lg lg:text-3xl font-bold mb-8'>Projects</h2>
       
-      <div className='relative justify-items-center'>
+      <div className='relative w-full flex justify-center items-center'>
         <button
           onClick={() => scroll('left')}
-          className='absolute left-0 z-10 bg-gray-700 text-white px-3 py-2 rounded-full hover:bg-gray-800'
+          className='absolute left-4 z-10 bg-gray-700 text-white px-3 py-2 rounded-full hover:bg-gray-800'
           style={{ top: '50%', transform: 'translateY(-50%)' }}
         >
           ←
         </button>
         <button
           onClick={() => scroll('right')}
-          className='absolute right-0 z-10 bg-gray-700 text-white px-3 py-2 rounded-full hover:bg-gray-800'
+          className='absolute right-4 z-10 bg-gray-700 text-white px-3 py-2 rounded-full hover:bg-gray-800'
           style={{ top: '50%', transform: 'translateY(-50%)' }}
         >
           →
@@ -46,7 +46,8 @@ const Projects = () => {
 
         <div
           ref={scrollContainer}
-          className='justify-center items-center flex overflow-x-auto space-x-6 scroll-smooth scrollbar-hide'
+          className='flex overflow-x-auto space-x-6 scroll-smooth scrollbar-hide'
+          style={{ padding: '20px' }}
         >
           {projects.map((project) => (
             <ProjectCard key={project.name} name={project.name} image={project.image} link={project.link} />
